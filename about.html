@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styles.css">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Nived Sudhakar</title>
+            <link rel="stylesheet" href="styles.css">
+        
+            
+        
+
+    </head>
+
+    <body>
+        
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="selected"><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                
+            </ul>
+            
+        </nav>
+
+        <h1 class="home-title">About</h1>
+
+        <div class="home-section1">
+            <div class="two-column">
+                <div class="column1">
+                    <p>Nived Sudhakar is a <var id="age">teenage</var> year old <var id="grade">amongus</var> at Valley Christian High School, 
+                    a computer science enthusiast, and a martial artist from San Jose, California. 
+                    His interest in computer science began by experimenting with raspberry pi computers from which it expanded to game and app development. 
+                    Nived has a 4.57 high school GPA and has taken 1 AP class. In his free time, 
+                    Nived participates in martial arts in which he is a third degree black belt and regularly volunteers his time to teach younger children. 
+                    In college, he wants to study computer science and math in order to become a software engineer.
+					
+                        
+                    </p>
+                </div>
+                <div class="column2">
+                    <img src="/test.jpeg" alt="Image failed to load" width="100%" style="border-radius: 5%">
+                </div>
+            </div>
+        </div>
+
+        
+    </body>
+
+    <script>
+		
+		const d = new Date()
+		const ma = new Date("02/01/2013")
+		const age = new Date("05/13/2008")
+		const school = new Date("07/01/2022")
+		
+		var str = ""
+        
+        
+        switch(Math.floor((d.getTime()-school.getTime()) / (1000*3600*24*365))){
+            case 0:
+                str = "freshman"
+                break
+            case 1:
+                str = "sophmore"
+                break
+            case 2:
+                str = "junior"
+                break
+            case 3:
+                str = "senior"
+                break
+            default:
+                str = "graduate"
+                break
+
+        }
+		
+		document.getElementById("grade").innerHTML = str
+        
+        document.getElementById("age").innerHTML = Math.floor((d.getTime()-age.getTime()) / (1000*3600*24*365))
+        
+        document.getElementById("ma").innerHTML = Math.floor((d.getTime()-ma.getTime()) / (1000*3600*24*365))
+        
+
+        
+        
+
+
+        
+        
+    </script>
+</html>
