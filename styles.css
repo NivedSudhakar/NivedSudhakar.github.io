@@ -163,22 +163,24 @@ ul {
 }
 
 .main-name{
-  font-size: 1000%;
+  font-size: 1800%;
   color: #ffffffff;
-  margin-right: 8%;
-  text-align: right;
-  margin-top: 1%;
+  margin-left: 5%;
+  text-align: left;
+  margin-top: 0.1%;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   
 }
 .main-name-bottom{
-  font-size: 1000%;
+  font-size: 1800%;
   color: #ffffffff;
-  margin-right: 8%;
+  margin-right: 5%;
   text-align: right;
-  margin-top: 10%;
+  margin-top: 25%;
+  right: 0;
+  bottom: 0;
  
 }
 
