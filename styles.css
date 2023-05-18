@@ -335,7 +335,9 @@ input[type=submit]:hover {
     line-height: 30px;
 }
 
-.control-width { width: 100%; margin: auto; }
+.control-width {
+   width: 100%; margin: auto;
+   }
 
 
  
