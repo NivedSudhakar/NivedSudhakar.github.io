@@ -18,26 +18,7 @@ var {
 --space-cadet: #1c2541ff;
 --yinmn-blue: #3a506bff;
 --verdigris: #5bc0beff;
---white: #ffffffff;
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffffff;
-    /* become a flex-container */
-    /* its children will be flex-items 
-    display: flex;
-    /* move flex-items in column 
-    flex-direction: row;
-  }
- 
-  li {
-    float: left;
-  }
-  */
+--white: #ffffffff;*/
   
 
   nav{
@@ -261,6 +242,8 @@ ul{
 .column22 {
     padding-right: 20%;
     text-align: left;
+    line-height: 30px;
+
 }
 
 .column12{

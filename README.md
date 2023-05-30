@@ -1,3 +1,1 @@
-# NivedSudhakar.github.io
-
-Personal Portfolio website
+# Personal portfolio website

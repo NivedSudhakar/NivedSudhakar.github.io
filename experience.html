@@ -36,7 +36,7 @@
         <div class="exp-div">
             <h1 class="exp-h1">Leadership</h1>
             <ul>
-				<li><p>Taught martial arts from the age of 10</p></li>
+				<li><p>Taught martial arts for <var id="lead">6</var> years</p></li>
             </ul>
 
         </div>
@@ -48,7 +48,16 @@
             </ul>
 
         </div>
+
+        
     </body>
+
+    <script>
+        const d = new Date()
+        const lead = new Date("1/1/2018")
+        document.getElementById("lead").innerHTML = Math.floor((d.getTime()-lead.getTime()) / (1000*3600*24*365));
+
+    </script>
 
 
 </html>
