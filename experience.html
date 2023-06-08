@@ -22,12 +22,25 @@
         <h1 class="home-title">Experience</h1>
 
         <div class="exp-div">
+
+            
             <h1 class="exp-h1">Academics</h1>
             <ul>
-				<li><p>1 AP taken in high school: AP Computer Science A</p></li>
-				<li><p>4.57 high school GPA</p></li>
-				<li><p>Working proficiency in three languages</p></li>
-				<li><p>Working towards associate's degree from local community college</p></li>
+				<button type="button" class="collapsible">Valley Christian High School</button>
+                <div class="content">
+                    <ul>
+                        <li><p>AP Computer Science A</p></li>
+                    </ul>
+                </div>
+
+                <button type="button" class="collapsible">Mission College</button>
+                <div class="content">
+                    <ul>
+                        <li><p>Introduction to C</p></li>
+                        <li><p>Robotics and Embedded Systems</p></li>
+                    </ul>
+                </div>
+                                
 				
             </ul>
 
@@ -56,6 +69,21 @@
         const d = new Date()
         const lead = new Date("1/1/2018")
         document.getElementById("lead").innerHTML = Math.floor((d.getTime()-lead.getTime()) / (1000*3600*24*365));
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        }
 
     </script>
 
