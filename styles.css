@@ -218,6 +218,7 @@ ul{
   background-color: #3a506bff;
   width: 25vw;
   border-radius: 1vw;
+  margin-bottom: 10%;
 }
 
 /* Add some padding inside the card container */
@@ -322,7 +323,31 @@ ul{
   padding: 2px;
 
   margin: 0;
+  color: #0b132bff;
+  border-color: #0b132bff;
 }
+
+.card-link {
+  border-width: 1px;
+  border-style: solid;
+  border-color: aliceblue;
+
+  font-size: medium;
+
+  padding: 2px;
+  margin: 0;
+
+
+  color: gray;
+  border-color: gray;
+}
+
+.card-link:hover {
+  color: #5bc0beff;
+  border-color: #5bc0beff;
+}
+
+
 
 
  
