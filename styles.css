@@ -312,6 +312,18 @@ ul{
   content: "\2212";
 }
 
+.card-desc {
+  border-width: 1px;
+  border-style: solid;
+  border-color: aliceblue;
+
+  font-size: medium;
+
+  padding: 2px;
+
+  margin: 0;
+}
+
 
  
 /* HTML5 display-role reset for older browsers */
