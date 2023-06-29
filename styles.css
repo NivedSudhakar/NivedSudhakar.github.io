@@ -317,6 +317,8 @@ ul{
   border-width: 1px;
   border-style: solid;
   border-color: aliceblue;
+  border-radius: 8px;
+
 
   font-size: medium;
 
@@ -331,6 +333,7 @@ ul{
   border-width: 1px;
   border-style: solid;
   border-color: aliceblue;
+  border-radius: 8px;
 
   font-size: medium;
 
