@@ -1,0 +1,17 @@
+
+h1 {
+    text-align: center;
+  }
+  
+  .projectscards__container {
+    max-width: 30vw;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .projectscards__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+  }
+ 
