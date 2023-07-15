@@ -1,0 +1,64 @@
+section {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+  }
+
+  .section1 h1 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 10vh;
+    color: rgb(122, 248, 79);
+    z-index: 2;
+  }
+
+  .section1 {
+    position: relative;
+  }
+
+.container {
+    overflow: scroll;
+    height: 100vh;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    position: relative;
+  }
+
+.snapCell-control {
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+}
+
+.cardsnstuff {
+    height: 100vh;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    margin-top: 5vh;
+
+    
+}
+
+.cardsnstuff h1 {
+    font-size: 10vh;
+    color: rgb(122, 248, 79);
+}
+
+
+
+.scrollable {
+    position: relative;
+}
+  
+

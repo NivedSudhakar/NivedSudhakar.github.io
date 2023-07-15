@@ -1,23 +1,20 @@
 import React from 'react'
-import FlippableCardItem from './FlippableCardItem'
-import "./FlippableCards.css"
+import CardItem from './CardItem1'
+import "./Cards1.css"
 
-function ProjectCards() {
+function ExperienceCards(props) {
   return (
-    <div className='fcards'>
-        <h1>Projects</h1>
-        <div className='fcards__container'>
-          <div className="fcards__wrapper">
-            <ul className='fcards__items'>
-              <FlippableCardItem 
-                src='/images/project-website.jpg'
+    <div className='cards'>
+        <div className='cards__container'>
+          <div className="cards__wrapper">
+            <ul className='cards__items'>
+              <CardItem
                 text = "This Website"
                 label = "Website"
                 desc = "A website created using React"
 
               />
-              <FlippableCardItem 
-                src='/images/condense2.jpg'
+              <CardItem 
                 text = "Condense"
                 label = "Chrome Extension"
                 desc = "A chrome extension to condense a websites links onto a single page"
@@ -25,9 +22,8 @@ function ProjectCards() {
               />
               
             </ul>
-            <ul className='fcards__items'>
-              <FlippableCardItem 
-                src='/images/ship.png'
+            <ul className='cards__items'>
+              <CardItem 
                 text = "Spacing"
                 label = "Video Game"
                 desc = "A videogame created using Unity and C#"
@@ -41,4 +37,4 @@ function ProjectCards() {
   )
 }
 
-export default ProjectCards;
+export default ExperienceCards;

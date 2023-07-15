@@ -1,0 +1,10 @@
+.RainStreamMain {
+    color: rgb(122, 248, 79);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    white-space: nowrap;
+    user-select: none;
+    text-shadow: 0px 0px 8px rgba(32, 194, 14, 0.8);
+    font-size: 50;
+}
+
