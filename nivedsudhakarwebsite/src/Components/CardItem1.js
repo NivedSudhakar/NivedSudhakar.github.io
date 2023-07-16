@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Cards1.css"
 
-function CardItem(props) {
+function CardItem1(props) {
   return (
     <>
     
@@ -19,4 +19,4 @@ function CardItem(props) {
   )
 }
 
-export default CardItem
+export default CardItem1

@@ -1,15 +1,42 @@
-import React from 'react'
-import "../SnapScroll.css"
-import ExperienceCards from "../ExperienceCards"
+import React, { useState, useEffect, useCallback} from 'react'
+import "./SnapScroll.css"
+import SCards from "../SCards"
+import ECards from '../ECards'
 import MatrixRain from "../MatrixRain"
 
+
 function Experience() {
+
+    const [Card, setCard] = useState(0);
+
+    const handleNavigation = useCallback(
+        e => {
+          const window = e.currentTarget;
+          
+          if (window.scrollY >= window.innerHeight/2){
+            setCard(1);
+
+          }
+          else {
+            setCard(0);
+          }
+        }
+      );
+      useEffect(() => {
+        window.addEventListener("scroll", handleNavigation);
+      
+        return () => {
+          window.removeEventListener("scroll", handleNavigation);
+        };
+      }, [handleNavigation]);
+
   return (
         <>
-            <div className='cardsnstuff'>
-                    <h1>Computer Science</h1>
-                    <ExperienceCards/>
-            </div>
+            {Card == 0 ? 
+                <SCards/>
+                :
+                <ECards/>
+            }
 
             <div className='container'>
 
@@ -29,6 +56,10 @@ function Experience() {
                         
                     </section>
                     <section >
+                    <video autoPlay muted loop className="myVideo">
+                        <source src="/images/envid.mp4" type="video/mp4"/>
+                    </video>
+                        
 
                     </section>
                     <section>
