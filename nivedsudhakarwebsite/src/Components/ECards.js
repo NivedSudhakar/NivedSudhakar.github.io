@@ -11,24 +11,21 @@ function ECards(props) {
           <div className="cards__wrapperE">
             <ul className='cards__itemsE'>
               <CardItem2
-                text = "This Website"
-                label = "Website"
-                desc = "A website created using React"
+                text = "30+ Volunteer Hours at Tree Nursery"
+
 
               />
               <CardItem2 
-                text = "Condense"
-                label = "Chrome Extension"
-                desc = "A chrome extension to condense a websites links onto a single page"
+                text = "Software team member of $100M XPRIZE Carbon Quest Competition"
+
 
               />
               
             </ul>
             <ul className='cards__itemsE'>
               <CardItem2 
-                text = "Spacing"
-                label = "Video Game"
-                desc = "A videogame created using Unity and C#"
+                text = "Coming Soon"
+                
 
               />
               

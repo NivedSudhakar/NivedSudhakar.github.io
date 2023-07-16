@@ -11,24 +11,20 @@ function SCards(props) {
           <div className="cards__wrapper">
             <ul className='cards__items'>
               <CardItem1
-                text = "This Website"
-                label = "Website"
-                desc = "A website created using React"
+                text = "Pursuing AS in Computer Information Systems"
 
               />
               <CardItem1
-                text = "Condense"
-                label = "Chrome Extension"
-                desc = "A chrome extension to condense a websites links onto a single page"
+                text = "Harvard CS50X Certification, Scientific Computing with Python Certification"
 
               />
+              
               
             </ul>
             <ul className='cards__items'>
               <CardItem1 
-                text = "Spacing"
-                label = "Video Game"
-                desc = "A videogame created using Unity and C#"
+                text = "Using my knowledge of various programming languages and frameworks, I have made several projects including games, websites, and apps which are visible in the projects tab. Additionally, I have taken community college classes in Computer Information Systems along with AP Computer Science A, the latter of which I recieved a 5 in."
+
 
               />
               
