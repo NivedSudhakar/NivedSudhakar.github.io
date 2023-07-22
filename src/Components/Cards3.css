@@ -1,0 +1,151 @@
+:root {
+    --funkyDarkBlue: rgb(164, 189, 178);
+  }
+  
+  .cardsEd {
+      padding: 0rem;
+      background: transparent;
+  
+  
+    }
+    
+    
+    
+    .cards__containerEd {
+      flex-flow: column;
+      align-items: center;
+      max-width: 60vw;
+      margin: 0 auto;
+  
+  
+    }
+    
+    .cards__wrapperEd {
+      position: relative;
+      margin: 50px 0 45px;
+  
+    }
+    
+    .cards__itemsEd {
+      margin-bottom: 24px;
+    }
+    
+    .cards__itemEd {
+      display: flex;
+      flex: 1;
+      margin: 0 1rem;
+      border-radius: 10px;
+      aspect-ratio: 14/5;
+  
+      border-color: var(--funkyDarkBlue);
+      border-style: solid;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: rgb(56, 128, 128);
+  
+    }
+    
+  
+    
+  
+    
+    .cards__item__linkEd {
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+  
+      border-radius: 10px;
+      overflow: hidden;
+      text-decoration: none;
+    }
+    
+    .cards__item__pic-wrapEd {
+      position: relative;
+      width: 100%;
+      padding-top: 67%;
+      overflow: hidden;
+    }
+    
+    .fade-img {
+      animation-name: fade-img;
+      animation-duration: 2s;
+    }
+    
+    .cards__item__pic-wrap::afterE {
+      content: attr(data-category);
+      position: absolute;
+      bottom: 0;
+      margin-left: 10px;
+      padding: 6px 8px;
+      max-width: calc((100%) - 60px);
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+      background-color: #1f98f4;
+      box-sizing: border-box;
+    }
+    
+    .cards__item__imgEd {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      transition: all 0.2s linear;
+    }
+    
+    
+    
+    .cards__item__infoEd {
+      padding: 20px 30px 30px;
+    }
+    
+    .cards__item__textEd {
+      color: var(--funkyDarkBlue);
+      font-size: 18px;
+      line-height: 24px;
+    }
+    
+    @media only screen and (min-width: 1200px) {
+      .content__blog__containerEd {
+        width: 84%;
+      }
+    }
+    
+    @media only screen and (min-width: 1024px) {
+      .cards__itemsEd {
+        display: flex;
+      }
+    }
+    
+    @media only screen and (max-width: 1024px) {
+      .cards__itemEd {
+        margin-bottom: 2rem;
+      }
+    }
+  
+    .cardsnstuffEd {
+      height: 100vh;
+      width: 100%;
+  
+      justify-content: center;
+      align-items: center;
+  
+      position: fixed;
+  
+      margin-top: 5vh;
+  
+      
+  }
+  
+  .cardsnstuffEd h1 {
+      font-size: 10vh;
+      color: rgb(56, 128, 128);
+  }
