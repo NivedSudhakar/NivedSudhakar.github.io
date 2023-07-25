@@ -22,7 +22,7 @@
   
   .cards__wrapper {
     position: relative;
-    margin: 50px 0 45px;
+    margin: 2vw 0 1vw;
 
   }
   
@@ -109,7 +109,7 @@
   
   .cards__item__text {
     color: var(--funkyGreen);
-    font-size: 18px;
+    font-size: 100%;
     line-height: 24px;
   }
   
@@ -127,7 +127,11 @@
   
   @media only screen and (max-width: 1024px) {
     .cards__item {
-      margin-bottom: 2rem;
+      margin: 2vh;
+      
+    }
+    .cardsnstuff h1 {
+      font-size: 15vw;
     }
   }
 
@@ -140,12 +144,11 @@
 
     position: fixed;
 
-    margin-top: 5vh;
 
     
 }
 
 .cardsnstuff h1 {
-    font-size: 10vh;
+  font-size: 10vh;
     color: rgb(122, 248, 79);
 }

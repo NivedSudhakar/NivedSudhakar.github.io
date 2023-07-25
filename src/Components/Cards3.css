@@ -5,6 +5,8 @@
   .cardsEd {
       padding: 0rem;
       background: transparent;
+
+
   
   
     }
@@ -43,7 +45,17 @@
       justify-content: center;
       text-align: center;
       background-color: rgb(56, 128, 128);
+
   
+    }
+
+    .clicksection {
+      z-index: 99;
+      display: flex;
+      flex: 1;
+      margin: 0 0;
+      border-radius: 10px;
+      
     }
     
   
@@ -127,7 +139,10 @@
     
     @media only screen and (max-width: 1024px) {
       .cards__itemEd {
-        margin-bottom: 2rem;
+        margin-bottom: 2vh;
+      }
+      .cardsnstuffEd h1 {
+        font-size: 15vw;
       }
     }
   
@@ -140,7 +155,6 @@
   
       position: fixed;
   
-      margin-top: 5vh;
   
       
   }
@@ -148,4 +162,5 @@
   .cardsnstuffEd h1 {
       font-size: 10vh;
       color: rgb(56, 128, 128);
+      z-index: 999;
   }

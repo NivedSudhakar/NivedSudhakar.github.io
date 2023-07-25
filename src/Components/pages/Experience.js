@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback} from 'react'
 import "./SnapScroll.css"
-import SCards from "../SCards"
-import ECards from '../ECards'
-import EdCards from '../EdCards'
+import {SCards} from "../SCards"
+import {ECards} from '../ECards'
+import {EdCards} from '../EdCards'
 
 import MatrixRain from "../MatrixRain"
 
@@ -40,8 +40,6 @@ function Experience() {
 
   return (
         <>
-            {Card === 0 ? <SCards/> : Card === 1 ? <ECards/> : <EdCards/>}
-
             
 
             <div className='container'>
@@ -78,6 +76,16 @@ function Experience() {
                 </div>
             
             </div>
+
+            <div className='cardsindex'>
+              {Card === 0 ? <SCards/> : Card === 1 ? <ECards/> : <EdCards onClick={onclick}/>}
+
+            </div>
+
+
+            
+
+            
         </>
         
   )

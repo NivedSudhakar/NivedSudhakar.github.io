@@ -2,7 +2,7 @@ import React from 'react'
 import CardItem1 from './CardItem1'
 import "./Cards1.css"
 
-function SCards(props) {
+export function SCards(props) {
   return (
     <div className='cardsnstuff'>
       <h1>Computer Science</h1>
@@ -23,7 +23,7 @@ function SCards(props) {
             </ul>
             <ul className='cards__items'>
               <CardItem1 
-                text = "Using my knowledge of various programming languages and frameworks, I have made several projects including games, websites, and apps which are visible in the projects tab. Additionally, I have taken community college classes in Computer Information Systems along with AP Computer Science A, the latter of which I recieved a 5 in."
+                text = "Using my programming knowledge, I have made several projects including games, websites, and apps. Additionally, I have taken community college classes in Computer Science along with AP Computer Science A, the latter of which I recieved a 5 in."
 
 
               />

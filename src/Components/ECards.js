@@ -2,7 +2,7 @@ import React from 'react'
 import CardItem2 from './CardItem2'
 import "./Cards2.css"
 
-function ECards(props) {
+export function ECards(props) {
   return (
     <div className='cardsnstuffE'>
       <h1>Environmental Science</h1>
