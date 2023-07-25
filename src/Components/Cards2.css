@@ -22,7 +22,7 @@
     
     .cards__wrapperE {
       position: relative;
-      margin: 50px 0 45px;
+      margin: 2vw 0 1vw;
   
     }
     
@@ -109,7 +109,7 @@
     
     .cards__item__textE {
       color: var(--funkyBlue);
-      font-size: 18px;
+      font-size: 100%;
       line-height: 24px;
     }
     
@@ -127,10 +127,10 @@
     
     @media only screen and (max-width: 1024px) {
       .cards__itemE {
-        margin-bottom: 2vh;
+        margin: 2vh;
       }
       .cardsnstuffE h1 {
-        font-size: 15vw;
+        font-size: 10vw;
       }
     }
   

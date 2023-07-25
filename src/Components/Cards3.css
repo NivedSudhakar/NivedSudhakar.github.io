@@ -24,7 +24,7 @@
     
     .cards__wrapperEd {
       position: relative;
-      margin: 50px 0 45px;
+      margin: 2vw 0 1vw;
   
     }
     
@@ -121,7 +121,7 @@
     
     .cards__item__textEd {
       color: var(--funkyDarkBlue);
-      font-size: 18px;
+      font-size: 100%;
       line-height: 24px;
     }
     
@@ -139,7 +139,7 @@
     
     @media only screen and (max-width: 1024px) {
       .cards__itemEd {
-        margin-bottom: 2vh;
+        margin: 2vh;
       }
       .cardsnstuffEd h1 {
         font-size: 15vw;
