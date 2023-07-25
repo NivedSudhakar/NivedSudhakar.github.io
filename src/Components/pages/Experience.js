@@ -47,6 +47,7 @@ function Experience() {
                 
 
                 <div className='scrollable'>
+                    
                     <section className='section1'>
                         
                         <div className='snapCell-control'>

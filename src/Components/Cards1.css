@@ -109,7 +109,7 @@
   
   .cards__item__text {
     color: var(--funkyGreen);
-    font-size: 100%;
+    font-size: 1.2vw;
     line-height: 24px;
   }
   
@@ -151,4 +151,5 @@
 .cardsnstuff h1 {
   font-size: 10vh;
     color: rgb(122, 248, 79);
+    margin-top: 3vh;
 }
