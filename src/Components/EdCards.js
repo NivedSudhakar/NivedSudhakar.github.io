@@ -36,6 +36,12 @@ export const EdCards = ({onClick}) => {
                   text1 = "4.00 Mission College GPA"
                 />
               </div>
+
+              <div className='clicksection' onClick={() => {setCard(2)}}>
+                <CardItem3 
+                  text1 = "Certifications"
+                />
+              </div>
               
               
             </ul>
@@ -45,12 +51,19 @@ export const EdCards = ({onClick}) => {
                 text2 = "AP Computer Science A - 5, AP Statistics, AP Computer Science Principles, AP Human Geography, AP Chemistry"
                 
 
-              /> : <CardItem3 
+              /> : Card === 1 ? <CardItem3 
               text1 = "Courses taken at Mission College: "
               text2 = "Robotics and Embedded Systems, Introduction to C"
               
 
-            />}
+            /> :
+            <CardItem3 
+              text1 = "CS50x from Harvard"
+              text2 = "Linear Algebra I from Georgia Tech"
+              
+
+            />
+            }
               
             </ul>
           </div>
