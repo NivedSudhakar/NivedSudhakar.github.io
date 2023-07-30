@@ -5,13 +5,12 @@
 .cards {
     padding: 0rem;
     background: transparent;
-
-
   }
   
   
   
   .cards__container {
+    
     flex-flow: column;
     align-items: center;
     max-width: 60vw;
@@ -23,6 +22,7 @@
   .cards__wrapper {
     position: relative;
     margin: 2vw 0 1vw;
+
 
   }
   
@@ -133,6 +133,9 @@
     .cardsnstuff h1 {
       font-size: 15vw;
     }
+    .cards__container {
+      max-width: 90vw;
+    }
 
     
   }
@@ -151,7 +154,7 @@
 }
 
 .cardsnstuff h1 {
-  font-size: 10vh;
+  font-size: calc(5vw + 35px);
     color: rgb(122, 248, 79);
     margin-top: 3vh;
 }

@@ -132,6 +132,10 @@
       .cardsnstuffE h1 {
         font-size: 10vw;
       }
+      .cards__containerE {
+        max-width: 90vw;
+      }
+  
     }
   
     .cardsnstuffE {
@@ -148,7 +152,7 @@
   }
   
   .cardsnstuffE h1 {
-      font-size: 10vh;
+      font-size: calc(5vw + 35px);
       color: var(--funkyBlue);
       margin-top: 3vh;
   }
