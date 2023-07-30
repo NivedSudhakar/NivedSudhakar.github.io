@@ -14,6 +14,19 @@
     top: 0;
     z-index: 999;
   }
+
+  .navbar.active {
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+  }
   
   .navbar-container {
     display: flex;
@@ -46,7 +59,7 @@
     list-style: none;
     text-align: center;
     width: 60vw;
-    justify-content: end;
+    justify-content: start;
     margin-right: 2rem;
   }
   
@@ -84,6 +97,8 @@
     .NavbarItems {
       position: relative;
     }
+    
+    
   
     .nav-menu {
       display: flex;
@@ -93,9 +108,13 @@
       position: absolute;
       top: 80px;
       left: -100%;
+      bottom: 0;
       opacity: 1;
       transition: all 0.5s ease;
+      z-index: 999;
     }
+
+    
   
     .nav-menu.active {
       background: #242222;
@@ -103,6 +122,10 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
+      bottom: 0;
+      position: fixed;
+
+
     }
   
     .nav-links {

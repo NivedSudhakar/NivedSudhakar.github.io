@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback} from 'react'
+import React, { useState, useEffect, useCallback, useRef} from 'react'
 import "./SnapScroll.css"
 import {SCards} from "../SCards"
 import {ECards} from '../ECards'
@@ -8,6 +8,27 @@ import MatrixRain from "../MatrixRain"
 
 
 function Experience() {
+  const [dimensions, setDimensions] = React.useState({ 
+    height: window.innerHeight,
+    width: window.innerWidth
+  })
+  React.useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth
+      })
+    
+}
+
+    window.addEventListener('resize', handleResize)
+
+    return _ => {
+      window.removeEventListener('resize', handleResize)
+    
+}
+  })
+  
 
     const [Card, setCard] = useState(0);
 
@@ -36,9 +57,19 @@ function Experience() {
         };
       }, [handleNavigation]);
 
+      const videoRef = useRef(undefined);
+      useEffect(() => {
+          videoRef.current.defaultMuted = true;
+      })
+
+     
+
       
 
+    
+
   return (
+    
         <>
             
 
@@ -61,7 +92,7 @@ function Experience() {
                         
                     </section>
                     <section >
-                    <video autoPlay muted loop className="video">
+                    <video className="video" ref={videoRef} loop autoPlay muted playsInline >
                         <source src="/images/envid.mp4" type="video/mp4"/>
                     </video>
                         
@@ -69,7 +100,7 @@ function Experience() {
                     </section>
                     <section>
 
-                    <video autoPlay muted loop className="video">
+                    <video className="video" ref={videoRef} loop autoPlay muted playsInline>
                         <source src="/images/scienceBG.mp4" type="video/mp4"/>
                     </video>
 

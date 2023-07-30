@@ -1,14 +1,17 @@
+
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "./Button.js"
 import "./Navbar.css"
 
+
+
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const handleClick = () => {setClick(!click); };
+  const closeMobileMenu = () => {setClick(false); };
 
   const showButton = () => {
     if (window.innerWidth <= 960){
@@ -22,7 +25,7 @@ function Navbar() {
   
   return (
     <>
-    <nav className='navbar'>
+    <nav className={click ? "navbar active" : "navbar"}>
         <div className='navbar-container'>
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                 Nived Sudhakar

@@ -16,11 +16,15 @@ section {
   }
 
   .cardsindex {
-    z-index: 999;
+    z-index: 99;
     margin-top: -2vw;
     display: flex;
     position: absolute;
   }
+
+  
+
+
 
 
 
