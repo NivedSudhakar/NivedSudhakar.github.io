@@ -9,7 +9,7 @@ import Experience from './Components/pages/Experience'
 function App() {
   return (
     <>
-      <Router>
+      <Router basename='NivedSudhakar.github.io'>
         <Navbar />
         <Routes>
           <Route path="/" exact Component={Home} />
