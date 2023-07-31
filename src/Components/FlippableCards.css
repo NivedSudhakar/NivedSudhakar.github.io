@@ -61,6 +61,7 @@ h1 {
     position: absolute;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     transform: rotateY(180deg);
 }

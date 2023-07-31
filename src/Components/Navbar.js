@@ -25,6 +25,7 @@ function Navbar() {
   
   return (
     <>
+    <div className='relativer'>
     <nav className={click ? "navbar active" : "navbar"}>
         <div className='navbar-container'>
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
@@ -58,6 +59,7 @@ function Navbar() {
 
         </div>
     </nav>
+    </div>
     </>
   )
 }

@@ -22,16 +22,11 @@ section {
     position: absolute;
   }
 
-  
-
-
-
-
-
-
-  
-
-
+  @media only screen and (max-width: 980px) {
+    .cardsindex {
+      margin-top: -10vw;
+    }
+  }
 
 html {
     
