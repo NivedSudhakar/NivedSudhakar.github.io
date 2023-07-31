@@ -50,11 +50,7 @@ function Navbar() {
                         Projects
                     </Link>
                 </li>
-                <li className='nav-item'>
-                    <Link to="/Resume" className="nav-links" onClick={closeMobileMenu}>
-                        Resume
-                    </Link>
-                </li>
+                
             </ul>  
 
         </div>
