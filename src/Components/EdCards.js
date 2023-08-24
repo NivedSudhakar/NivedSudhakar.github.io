@@ -48,10 +48,10 @@ export const EdCards = ({onClick}) => {
             <ul className='cards__itemsEd'>
               { Card === 0 ? <CardItem3 
                 text1 = "APs taken in high school: "
-                text2 = "AP Computer Science A - 5, AP Statistics, AP Computer Science Principles, AP Human Geography, AP Chemistry"
+                text2 = "AP Computer Science A - 5, AP Statistics, AP Physics 1, AP Human Geography, AP Chemistry"
                 
 
-              /> : Card === 1 ? <CardItem3 
+              /> : Card === 1 ? <CardItem3
               text1 = "Courses taken at Mission College: "
               text2 = "Robotics and Embedded Systems, Introduction to C"
               
