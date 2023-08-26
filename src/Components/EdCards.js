@@ -53,7 +53,7 @@ export const EdCards = ({onClick}) => {
 
               /> : Card === 1 ? <CardItem3
               text1 = "Courses taken at Mission College: "
-              text2 = "Robotics and Embedded Systems, Introduction to C"
+              text2 = "Robotics and Embedded Systems, Introduction to C, Introduction to Data Structures with Java, Python Programming"
               
 
             /> :
