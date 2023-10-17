@@ -24,7 +24,7 @@ export function ECards(props) {
             </ul>
             <ul className='cards__itemsE'>
               <CardItem2 
-                text = "Coming Soon"
+                text = "Intern at Future Green"
                 
 
               />

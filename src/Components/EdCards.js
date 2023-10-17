@@ -32,7 +32,7 @@ export const EdCards = ({onClick}) => {
               
 
               <div className='clicksection' onClick={() => {setCard(1)}}>
-                <CardItem3 
+                <CardItem3
                   text1 = "4.00 Mission College GPA"
                 />
               </div>

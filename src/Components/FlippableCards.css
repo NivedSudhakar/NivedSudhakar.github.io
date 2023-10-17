@@ -21,6 +21,7 @@ h1 {
 
 .fcards__items {
   margin-bottom: 24px;
+
 }
 
 .fcards__item, .fcard__item__back, .fcard__item__front {
@@ -28,6 +29,7 @@ h1 {
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
+
 }
 
 .fcard__item__back, .fcard__item__front {
@@ -62,6 +64,9 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+
+
 
     transform: rotateY(180deg);
 }

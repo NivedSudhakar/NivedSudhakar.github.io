@@ -60,9 +60,14 @@ function Experience() {
       const videoRef = useRef(undefined);
       useEffect(() => {
           videoRef.current.defaultMuted = true;
-      })
 
-     
+      });
+
+      const setPlayBack = () => {
+        videoRef.current.playbackRate = 0.7;
+      };
+
+
 
       
 
@@ -100,7 +105,7 @@ function Experience() {
                     </section>
                     <section>
 
-                    <video className="video" ref={videoRef} loop autoPlay muted playsInline>
+                    <video className="video" ref={videoRef} loop autoPlay muted playsInline onCanPlay={() => setPlayBack()}>
                         <source src="/images/scienceBG.mp4" type="video/mp4"/>
                     </video>
 

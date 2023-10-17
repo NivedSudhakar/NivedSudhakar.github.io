@@ -3,11 +3,23 @@ import FlippableCardItem from './FlippableCardItem'
 import "./FlippableCards.css"
 
 function ProjectCards() {
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noreferrer");
+  };
   return (
     <div className='fcards'>
         <h1>Projects</h1>
         <div className='fcards__container'>
           <div className="fcards__wrapper">
+            <ul className='fcards__items' onClick={() => openInNewTab("https://www.youtube.com/watch?v=OClBandvQnE")}>
+              <FlippableCardItem
+                src='/images/ReactionWheel.jpeg'
+                text = "Self Balancing Reaction Wheel"
+                label = "Robotics"
+                desc = "An Inverted Pendulum that uses a Reaction Wheel to balance itself"
+
+              />
+            </ul>
             <ul className='fcards__items'>
               <FlippableCardItem 
                 src='/images/project-website.jpg'
@@ -26,7 +38,7 @@ function ProjectCards() {
               
             </ul>
             <ul className='fcards__items'>
-              <FlippableCardItem 
+              <FlippableCardItem
                 src='/images/ship.png'
                 text = "Spacing"
                 label = "Video Game"
