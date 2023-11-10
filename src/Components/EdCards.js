@@ -12,7 +12,11 @@ import "./Cards3.css"
 export const EdCards = ({onClick}) => {
   const [Card, setCard] = useState(0);
 
-  
+const VCCardsText = ["AP Computer Science A - 5", "AP Statistics", "AP Physics 1", "AP Human Geography", "AP Chemistry"]
+const MCCardsText = ["Introduction to Data Structures with Java", "Robotics and Embedded Systems"]
+const CertCardsText = ["Harvardx - CS50x", "GTx - Linear Algebra I"]
+
+
 
  
   return (
@@ -25,8 +29,8 @@ export const EdCards = ({onClick}) => {
 
 
               <div className='clicksection' onClick={() => {setCard(0)}}>
-                <CardItem3 onClick={() => {console.log("amongus")}}
-                  text1 = "4.57 Valley Christian High School GPA"
+                <CardItem3
+                  text1 = "4.75 Valley Christian High School GPA"
                 />
               </div>
               
@@ -46,20 +50,20 @@ export const EdCards = ({onClick}) => {
               
             </ul>
             <ul className='cards__itemsEd'>
-              { Card === 0 ? <CardItem3 
+              { Card === 0 ? <CardItem3
                 text1 = "APs taken in high school: "
-                text2 = "AP Computer Science A - 5, AP Statistics, AP Physics 1, AP Human Geography, AP Chemistry"
+                details = {VCCardsText}
                 
 
               /> : Card === 1 ? <CardItem3
-              text1 = "Courses taken at Mission College: "
-              text2 = "Robotics and Embedded Systems, Introduction to C, Introduction to Data Structures with Java, Python Programming"
-              
+              text1 = "Mission College Courses: "
+              details = {MCCardsText}
+
 
             /> :
-            <CardItem3 
-              text1 = "CS50x from Harvard"
-              text2 = "Linear Algebra I from Georgia Tech"
+            <CardItem3
+              text1 = "Certifications: "
+              details = {CertCardsText}
               
 
             />
@@ -73,5 +77,7 @@ export const EdCards = ({onClick}) => {
     
   )
 }
+
+
 
 export default EdCards;
