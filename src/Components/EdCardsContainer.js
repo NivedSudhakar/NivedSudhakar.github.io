@@ -2,14 +2,14 @@ import { render } from '@testing-library/react';
 import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
-import CardItem3 from './CardItem3'
-import "./Cards3.css"
+import CardItem3 from './EdCardItem'
+import "./EdCards.css"
 
 
 
 
 
-export const EdCards = ({onClick}) => {
+export const EdCardsContainer = ({onClick}) => {
   const [Card, setCard] = useState(0);
 
 const VCCardsText = ["AP Computer Science A - 5", "AP Statistics", "AP Physics 1", "AP Human Geography", "AP Chemistry"]
@@ -80,4 +80,4 @@ const CertCardsText = ["Harvardx - CS50x", "GTx - Linear Algebra I"]
 
 
 
-export default EdCards;
+export default EdCardsContainer;

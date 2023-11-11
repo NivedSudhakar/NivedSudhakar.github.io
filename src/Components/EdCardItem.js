@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "./Cards3.css"
+import "./EdCards.css"
 
-function CardItem3(props) {
+function EdCardItem(props) {
 
   const details = props.details
 
@@ -32,4 +32,4 @@ function CardItem3(props) {
   )
 }
 
-export default CardItem3
+export default EdCardItem

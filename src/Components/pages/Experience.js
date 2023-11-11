@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, useRef} from 'react'
 import "./SnapScroll.css"
 import {CSCardsContainer} from "../CSCardsContainer"
 import {EnvCardsContainer} from '../EnvCardsContainer'
-import {EdCards} from '../EdCards'
+import {EdCardsContainer} from '../EdCardsContainer'
 
 import MatrixRain from "../MatrixRain"
 
@@ -115,7 +115,7 @@ function Experience() {
             </div>
 
             <div className='cardsindex'>
-              {Card === 0 ? <CSCardsContainer/> : Card === 1 ? <EnvCardsContainer/> : <EdCards onClick={onclick}/>}
+              {Card === 0 ? <CSCardsContainer/> : Card === 1 ? <EnvCardsContainer/> : <EdCardsContainer onClick={onclick}/>}
 
             </div>
 
