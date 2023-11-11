@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef} from 'react'
 import "./SnapScroll.css"
-import {SCards} from "../SCards"
+import {CSCardsContainer} from "../CSCardsContainer"
 import {ECards} from '../ECards'
 import {EdCards} from '../EdCards'
 
@@ -115,7 +115,7 @@ function Experience() {
             </div>
 
             <div className='cardsindex'>
-              {Card === 0 ? <SCards/> : Card === 1 ? <ECards/> : <EdCards onClick={onclick}/>}
+              {Card === 0 ? <CSCardsContainer/> : Card === 1 ? <ECards/> : <EdCards onClick={onclick}/>}
 
             </div>
 

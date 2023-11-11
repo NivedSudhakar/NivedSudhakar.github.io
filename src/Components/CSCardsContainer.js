@@ -1,8 +1,8 @@
 import React from 'react'
-import CardItem1 from './CardItem1'
-import "./Cards1.css"
+import CardItem1 from './CSCardItem'
+import "./CSCards.css"
 
-export function SCards(props) {
+export function CSCardsContainer(props) {
   return (
     <div className='cardsnstuff'>
       <h1>Computer Science</h1>
@@ -37,4 +37,4 @@ export function SCards(props) {
   )
 }
 
-export default SCards;
+export default CSCardsContainer;
