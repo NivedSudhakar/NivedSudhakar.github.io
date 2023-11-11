@@ -1,8 +1,8 @@
 import React from 'react'
-import CardItem2 from './CardItem2'
-import "./Cards2.css"
+import CardItem2 from './EnvCardItem'
+import "./EnvCards.css"
 
-export function ECards(props) {
+export function EnvCardsContainer(props) {
   return (
     <div className='cardsnstuffE'>
       <h1>Environmental Science</h1>
@@ -38,4 +38,4 @@ export function ECards(props) {
   )
 }
 
-export default ECards;
+export default EnvCardsContainer;

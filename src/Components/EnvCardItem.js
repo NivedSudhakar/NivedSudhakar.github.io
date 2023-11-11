@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "./Cards2.css"
+import "./EnvCards.css"
 
-function CardItem2(props) {
+function EnvCardItem(props) {
   return (
     <>
     
@@ -13,10 +13,10 @@ function CardItem2(props) {
                     <h5 className='cards__item__textE'>{props.text}</h5>
                 </div>
             </Link>
-            
+
         </div>
     </>
   )
 }
 
-export default CardItem2
+export default EnvCardItem
