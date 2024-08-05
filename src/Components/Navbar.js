@@ -45,11 +45,11 @@ function Navbar() {
                         Experience
                     </Link>
                 </li>
-                <li className='nav-item'>
+                {/*<li className='nav-item'>
                     <Link to="/Projects" className="nav-links" onClick={closeMobileMenu}>
                         Projects
                     </Link>
-                </li>
+                </li>*/}
                 
             </ul>  
 

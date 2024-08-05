@@ -13,11 +13,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" exact Component={Home} />
-          <Route path="/Projects" exact Component={Projects} />
+          {/*<Route path="/Projects" exact Component={Projects} />*/}
           <Route path="/Experience" exact Component={Experience} />
         </Routes>
       </Router>
-      
+
     </>
   );
 }
