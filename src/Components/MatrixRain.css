@@ -1,8 +1,0 @@
-.mainMatrix {
-    position: relative;
-    background-color: black;
-    height: 100vh;
-    width: 100%;
-    z-index: 0;
-    display: flex;
-}
